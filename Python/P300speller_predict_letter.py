@@ -89,12 +89,12 @@ print('Training accuracy (binary - target or nontarget): {:02f}'.format(np.sum(p
 
 # PART 2 - Calculate Letter detection accuracy with test EEG
 # Ingredients for P300 speller
-spellermatrix = ['A', 'B', 'C', 'D', 'E', 'F', 
-                 'G', 'H', 'I', 'J', 'K', 'L',
-                 'M', 'N', 'O', 'P', 'Q', 'R',
-                 'S', 'T', 'U', 'V', 'W', 'X',
-                 'Y', 'Z', '1', '2', '3', '4',
-                 '5', '6', '7', '8', '9', '_']
+spellermatrix = ['\U0001F600', '\U0001F603', '\U0001F604', '\U0001F601', '\U0001F605', '\U0001F606', 
+                 '\U0001F642', '\U0001F643', '\U0001F609', '\U0001F607', '\U0001F970', '\U0001F929',
+                 '\U0001F617', '\U0001F618', '\U0001F619', '\U0001F60B', '\U0001F61B', '\U0001F61C',
+                 '\U0001F600', '\U0001F603', '\U0001F604', '\U0001F601', '\U0001F605', '\U0001F606', 
+                 '\U0001F642', '\U0001F643', '\U0001F609', '\U0001F607', '\U0001F970', '\U0001F929',
+                 '\U0001F617', '\U0001F618', '\U0001F619', '\U0001F60B', '\U0001F61B', '\U0001F61C']
 Config_P3speller = {"seq_code": range(1,13), "full_repeat": 15, "spellermatrix": spellermatrix}
 Params_P3speller = {"freq": [0.5, 10], "frame": [0, 600], "baseline": [-200, 0], "select_ch": range(1, 33)}
 
